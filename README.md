@@ -1,5 +1,5 @@
 
-# CS3357A Assignment #2: Building Two Chatroom Applications Using TCP and UDP
+# Two Chatroom Applications Using TCP and UDP
 
 This repository contains the code for Chatroom Applications in Python using TCP and UDP protocols.
 
@@ -35,7 +35,3 @@ python udp_client.py <client_name>
 ```
 
 Replace `<client_name>` with your desired username.
-
-## Contact
-
-If you encounter any issues or have questions, please contact me at egad@uwo.ca 
