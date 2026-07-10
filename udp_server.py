@@ -1,22 +1,10 @@
-# Assignment: Simple Chat Room - Server Code Implementation
+# ASimple Chat Room - Server Code Implementation
 
-# **Libraries and Imports**: 
-#    - Import the required libraries and modules. 
-#    You may need the below libraries for the client.
-#    Feel free to use any libraries as well.
 import socket
 import select
 import time
 
-# **Global Variables**:
-#    - IF NEEDED, Define any global variables that will be used throughout the code.
 
-# **Function Definitions**:
-#    - In this section, you will implement the functions you will use in the server side.
-#    - If you will use and implement the below functions, please don't edit the namings.
-#    - Feel free to add more other functions, and more variables.
-#    - Make sure that names of functions and variables are meaningful.
-#    - Take into consideration error handling, interrupts, client shutdown, and documentation.
 
 def broadcast_message(socket, last_message, addr_to_name):
     # Broadcasts a message to all connected clients.
@@ -25,8 +13,6 @@ def broadcast_message(socket, last_message, addr_to_name):
         socket.sendto(last_message.encode(), clientAddr)
 
 def run_server(serverSocket, serverPort):
-    # The main server function.
-    # It should handle incoming client messages,
     # manage client connections, and broadcast messages.
     messages_history = [] # list of messages sent by each user
     addr_to_name = {} # maps address to name
