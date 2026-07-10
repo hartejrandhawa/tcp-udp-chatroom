@@ -1,4 +1,4 @@
-# ASimple Chat Room - Server Code Implementation
+# Simple Chat Room - Server Code Implementation
 
 import socket
 import select
